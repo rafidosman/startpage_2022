@@ -35,8 +35,9 @@ body {
 ul {
 	list-style-type: none;
 	text-align: left;
-	padding: 10px 10px 10px 10px;
-	margin-top: 10px;
+	padding: 10px;
+  width: 20%;
+	margin: 15px;
 }
 
 p[class=cblueits] > a {
