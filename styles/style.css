@@ -136,7 +136,7 @@ form:focus-within input::placeholder {
 }
 
 .image {
-	max-width:600px;
+	max-width:500px;
 	margin-top: 0px;
 }
 
@@ -201,7 +201,7 @@ form:focus-within input::placeholder {
 
 	img#leftImg {
     	height: 280px;
-      width: 600px;
+      width: 500px;
   	}
 
   	#main_window {
@@ -220,7 +220,7 @@ form:focus-within input::placeholder {
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     #links_container {
         margin-top: 35px;
     }
