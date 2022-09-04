@@ -14,7 +14,7 @@
     --yellow: #aca98a;
 
 	--bg: #000000;
-	--fg: #191919;
+	--fg: #0f0f17;
 
 	--search-bg: rgba(255, 255, 255, 0);
 }
@@ -35,9 +35,9 @@ body {
 ul {
 	list-style-type: none;
 	text-align: left;
-	padding: 10px;
-  width: 20%;
-	margin: 15px;
+	padding-right: 0px;
+  padding-left: 15px;
+  
 }
 
 p[class=cblueits] > a {
@@ -91,6 +91,8 @@ form:focus-within input::placeholder {
 #content {
 	padding-top: 10px;
 	margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 #links_container {
@@ -102,6 +104,12 @@ form:focus-within input::placeholder {
 	color: var(--white);
 	text-decoration: none;
 	transition: all 0.4s;
+}
+
+#links_container ul {
+/*  display: flex;
+  flex-wrap: wrap;*/
+  width: 110px;
 }
 
 #links_container li {
@@ -128,7 +136,7 @@ form:focus-within input::placeholder {
 }
 
 .image {
-	max-width:500px;
+	max-width:600px;
 	margin-top: 0px;
 }
 
@@ -193,7 +201,7 @@ form:focus-within input::placeholder {
 
 	img#leftImg {
     	height: 280px;
-      width: 500px;
+      width: 600px;
   	}
 
   	#main_window {
@@ -212,7 +220,7 @@ form:focus-within input::placeholder {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #links_container {
         margin-top: 35px;
     }
