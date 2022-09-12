@@ -1,97 +1,138 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Ssupp!!</title>
-    <link rel=" shortcut icon" type="image/png" href="assets/icons/favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="styles/style.css">
-		<script src="scripts/transitions.js"></script>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ssupp!!</title>
+    <link
+      rel=" shortcut icon"
+      type="image/png"
+      href="assets/icons/favicon.ico"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="scripts/transitions.js"></script>
+  </head>
 
-<style>
+  <style>
     body {
-      background-image: url('assets/img/background.png');
+      background-image: url("assets/img/background.png");
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
     }
   </style>
 
-	<body>
-		<svg id="fader"></svg>
-        <script>fadeInPage();</script>
+  <body>
+    <svg id="fader"></svg>
+    <script>
+      fadeInPage();
+    </script>
 
-		<!-- Welcome screen -->
-		<div id="main_window">
-			<img id=leftImg src="assets/img/img.gif" class="image">
-			<div id="content">
-				<h1 class="title">こんにちは</h1>
-				<div id="date">
-					<script type="text/javascript">
-						function doDate() {
-							var str = "";
-							var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
-							var clock = new Date();
-							var now = new Date();
+    <!-- Welcome screen -->
+    <div id="main_window">
+      <img id="leftImg" src="assets/img/img.gif" class="image" />
+      <div id="content">
+        <h1 class="title">こんにちは</h1>
+        <div id="date">
+          <script type="text/javascript">
+            function doDate() {
+              var str = "";
+              var months = new Array(
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+              );
+              var clock = new Date();
+              var now = new Date();
 
-							str += months[clock.getMonth()] + " " + now.getDate() + ", " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
-							document.getElementById("date").innerHTML = str;
-						}
-						setInterval(doDate, 1000);
-						doDate();
-					</script>
-				</div>
+              str +=
+                months[clock.getMonth()] +
+                " " +
+                now.getDate() +
+                ", " +
+                clock.getFullYear() +
+                " | " +
+                ("0" + now.getHours()).slice(-2) +
+                ":" +
+                ("0" + now.getMinutes()).slice(-2) +
+                ":" +
+                ("0" + now.getSeconds()).slice(-2);
+              document.getElementById("date").innerHTML = str;
+            }
+            setInterval(doDate, 1000);
+            doDate();
+          </script>
+        </div>
 
-		<!-- Web search -->
-				<div id="web_search">
-					<form action="https://duckduckgo.com/?q=" method="GET" autocomplete="off">
-						<label for="q">></label>
-						<input autofocus
-			        	 		id="q"
-			         			name="q"
-			         			type="search"
-			         			placeholder="search with duckduckgo...">
-					</form>
-				</div>
+        <!-- Web search -->
+        <div id="web_search">
+          <form
+            action="https://duckduckgo.com/?q="
+            method="GET"
+            autocomplete="off"
+          >
+            <label for="q">></label>
+            <input
+              autofocus
+              id="q"
+              name="q"
+              type="search"
+              placeholder="search with duckduckgo..."
+            />
+          </form>
+        </div>
 
-		<!-- Links -->
-				<nav>
-					<div id=links_container>
-						<ul>
-							<a class="subtitle">Weeboo</a>
-								<li><a href="https://isekaiscan.com/">Isekaiscan</a></li>
-								<li><a href="https://mangadex.org/">Mangadex</a></li>
-								<li><a href="https://nyaa.si">Nyaa.si</a></li>
-						</ul>
-						<ul>
-							<a class="subtitle">Media</a>
-								<li><a href="https://www.youtube.com/">YouTube</a></li>
-								<li><a href="https://www.netflix.com/browse">Netflix</a></li>
-								<li><a href="https://www.twitch.com/">Twitch</a></li>
-                <li><a href="https://www.hotstar.com/my">Disney+</a></li>
-                <li><a href="https://viu.com/ott/my/en/all/">Viu</a></li>
-						</ul>
-						<ul>
-							<a class="subtitle">Others</a>
-								<li><a href="https://amanz.my/">Amanz</a></li>
-								<li><a href="https://drive.google.com/drive/">GDrive</a></li>
-								<li><a href="https://gmail.com/">Gmail</a></li>
-								<li><a href="https://anystations.ambankgroup.com/logon/LogonPoint/tmindex.html">Citrix</a></li>
-                <li><a href="https://www.reddit.com/">Reddit</a></li>
-						</ul>
-						<ul>
-							<a class="subtitle">Devshits</a>
-								<li><a href="https://www.dev.to/">DEV</a></li>
-                <li><a href="https://github.com/">Github</a></li>
-                <li><a href="https://leetcode.com/">Leetcode</a></li>
-                <li><a href="https://kaggle.com/">Kaggle</a></li>
-                <li><a href="https://hackerrank.com/">Hackerrank</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
+        <!-- Links -->
+        <nav>
+          <div id="links_container">
+            <ul>
+              <a class="subtitle">Weeboo</a>
+              <li><a href="https://isekaiscan.com/">Isekaiscan</a></li>
+              <li><a href="https://mangadex.org/">Mangadex</a></li>
+              <li><a href="https://nyaa.si">Nyaa.si</a></li>
+            </ul>
+            <ul>
+              <a class="subtitle">Media</a>
+              <li><a href="https://www.youtube.com/">YouTube</a></li>
+              <li><a href="https://www.netflix.com/browse">Netflix</a></li>
+              <li><a href="https://www.twitch.com/">Twitch</a></li>
+              <li><a href="https://www.hotstar.com/my">Disney+</a></li>
+              <li><a href="https://viu.com/ott/my/en/all/">Viu</a></li>
+            </ul>
+            <ul>
+              <a class="subtitle">Others</a>
+              <li><a href="https://amanz.my/">Amanz</a></li>
+              <li><a href="https://drive.google.com/drive/">GDrive</a></li>
+              <li><a href="https://gmail.com/">Gmail</a></li>
+              <li>
+                <a
+                  href="https://anystations.ambankgroup.com/logon/LogonPoint/tmindex.html"
+                  >Citrix</a
+                >
+              </li>
+              <li><a href="https://www.reddit.com/">Reddit</a></li>
+            </ul>
+            <ul>
+              <a class="subtitle">Devshits</a>
+              <li><a href="https://www.dev.to/">DEV</a></li>
+              <li><a href="https://github.com/">Github</a></li>
+              <li><a href="https://leetcode.com/">Leetcode</a></li>
+              <li><a href="https://kaggle.com/">Kaggle</a></li>
+              <li><a href="https://hackerrank.com/">Hackerrank</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
 
-		<script src="scripts/darkmode.js"></script>
-	</body>
+    <script src="scripts/darkmode.js"></script>
+  </body>
 </html>
