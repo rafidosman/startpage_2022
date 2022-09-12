@@ -6,6 +6,11 @@
 
 ### ✨ [Demo](https://github.com/rafidosman/startpage_2022/blob/main/assets/img/screenshot.png)
 
+
+<p align="center">
+  <img width="700" align="center" src="https://github.com/rafidosman/startpage_2022/blob/main/assets/img/screenshot.png" alt="screenshot"/>
+</p>
+
 ## Author
 
 👤 **rafidosman**
