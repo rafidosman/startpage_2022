@@ -4,7 +4,7 @@
 
 > Startpage for Web browser
 
-### ✨ [Demo](https://github.com/rafidosman/startpage_2022/blob/main/assets/img/screenshot.png)
+### ✨ [Demo](https://github.com/rafidosman/startpage_2022/blob/main/assets/img/anim.gif)
 
 
 <p align="center">
